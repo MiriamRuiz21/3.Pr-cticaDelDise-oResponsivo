@@ -1,0 +1,91 @@
+h1{
+    color: darkcyan;
+}
+@media (min-width:1170px) and (max-width:2000px){
+    .container2{
+        display: none;
+    }
+    *{
+        margin:0px;
+        padding: 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    table{
+        border: 3px solid darkcyan;
+        width:80%;
+        border-spacing: 0px;
+    
+    }
+    th{
+        background-color: darkcyan;
+        color: azure;
+    }
+    td{
+        padding: 10px;
+        text-align: center;
+        border:1px solid darkcyan;
+    }
+    tr:nth-child(odd){/*-impares even-pares*/
+        background-color: cadetblue;
+    }
+    
+    .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+    .description{
+        width:40%;
+    }
+}
+
+@media (min-width:300px) and (max-width:1170px){
+    .container1{
+        display: none;
+    }
+    *{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }    
+    .card1{ 
+        margin-top: 1%;
+        height: 40%;
+        width: 30%;
+        text-align: center;
+    }
+
+    .title1:hover{
+        color: black;
+        background-color: rgb(8, 99, 99);
+        border: 3px solid rgb(8, 99, 99);
+    }
+
+    .title1{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: azure;
+        background-color: darkcyan;
+        border: 3px solid darkcyan;
+        width:80%;
+    }
+    
+    .content1{
+        line-height: 1.2em;
+        border: 3px solid darkcyan;
+        width:80%;     
+    }
+
+    .content1:hover{
+        background-color: gainsboro;
+    }
+
+}
